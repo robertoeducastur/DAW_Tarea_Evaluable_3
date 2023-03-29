@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/general.css"/>
+    <link rel="stylesheet" href="css/ejercicio2.css"/>
+    <title>Ejercicio 2</title>
+</head>
+<body>
+    <header>
+        <img id="logo" src="img/logoDWEC.png" alt="Módulo DWEC" />
+        <h1>Ejercicio 2 - Tareas Obligatorias Segundo Parcial DWEC</h1>
+    </header>
+    <section class="activeSec">
+        <div class="tablas">
+            <div id="tablaColores">
+                
+            </div>
+            <div id="tablaDibujo">
+                
+            </div>
+            <div>
+                <input type="button" class="botones" id="limpiar" value="Limpiar" onclick="limpiar()">
+                <input type="button" class="botones" id="btnJugar" value="Jugar a las Figuras" onclick="botonJuego()">
+                <input type="button" class="botones" id="btnFinalizar" value="Finalizar Juego" onclick="finJuego()">
+            </div>
+        </div> 
+        <div class="juego" id="tablaJuegoDIV">
+            <table id="tablaJuego">
+                <caption>
+                    Dibuja en la cuadrícula la siguiente figura
+                </caption>
+                <tr>
+                    <td id="imagenTD">
+                        <div id="imagenDIV">
+
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" class="botones" id="aceptar" value="Comprobar" onclick="jugadaActual()">
+                        <input type="button" class="btn" id="recargar" onclick="recargarImagen()">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="texto">
+                        Visualiza la figura
+                    </td>
+                </tr>
+                <tr>
+                    <td id="selec">
+                        <select name="figuras" id="figuras">
+                            <option value="#" selected="selected">Seleccione figura</option>
+                            <option value="ave">Ave</option>
+                            <option value="cara">Cara</option>
+                            <option value="chica">Chica</option>
+                            <option value="ciervo">Ciervo</option>
+                            <option value="corazon">Corazón</option>
+                            <option value="flor">Flor</option>
+                            <option value="futbol">Futbolista</option>
+                            <option value="noel">Papá Noel</option>
+                            <option value="pajaro">Pájaro</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <footer>
+        <p>Alumno: Roberto Morán Noriega (32877155N)</p>
+    </footer>
+    <script src="js/solucionPanel.js"></script>
+</body>
+</html>

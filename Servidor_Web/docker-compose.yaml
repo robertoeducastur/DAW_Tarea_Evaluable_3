@@ -1,0 +1,18 @@
+version: "3.8"
+services:
+   php:
+      build:
+         context: ./
+         dockerfile: dockerfile
+      container_name: servidor
+      restart: always
+      ports:
+         - 1234:80
+      volumes:
+         - ./html:/var/www/html
+         - ./config:/usr/local/etc/php
+volumes:
+   html:
+   config:
+
+#docker-compose -f production.yml logs

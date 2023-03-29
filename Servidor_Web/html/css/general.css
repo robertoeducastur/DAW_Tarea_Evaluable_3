@@ -1,0 +1,135 @@
+body
+{
+    background-color: black;
+    color: white;
+    font-family:'Belwe Bd BT','Verdana','Monaco',sans-serif;
+    height: 100vh;
+    width: 100vw;
+}
+
+header 
+{
+    height: 5%;
+    width: 100%;
+}
+
+#logo
+{
+    margin-left: 60px;
+    margin-top: 5px;
+    width: 140px;
+    height: 60px;
+}
+
+header h1 
+{
+    float: right;
+    margin-right: 50px;
+}
+
+nav 
+{
+    height: 5%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+section
+{
+    height: 85%;
+    width: 100%;
+    margin: 0;
+}
+
+#menu
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+#menu li 
+{
+    float: left;
+    border: white 2px solid;
+}
+
+#menu li a 
+{
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+}
+
+#menu li a:hover:not(.active) 
+{
+    background-color: chartreuse;
+    cursor: pointer;
+}
+
+#menu li a:hover
+{
+    color: rgb(10, 139, 253);
+    cursor: pointer;
+}
+
+.active 
+{
+    background-color: rgb(10, 139, 253);
+    border: white 2px solid;
+}
+
+.activeSec
+{
+    border: white 2px solid;
+}
+
+footer 
+{
+    height: 5%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#tituloTarea
+{
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#unidad
+{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#menuTarea
+{
+    margin-top: 20px;
+    color: white;
+}
+
+#menuTarea li
+{
+    margin-top: 10px;
+}
+
+#menuTarea li a
+{
+    color: white;
+}
+
+#menuTarea li a:hover
+{
+    color: chartreuse;
+    cursor: pointer;
+}

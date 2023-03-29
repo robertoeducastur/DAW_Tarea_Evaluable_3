@@ -1,0 +1,100 @@
+.activeSec
+{
+    display: flex;
+}
+
+.tablas
+{
+    display: flex;
+    flex-direction: column;
+    flex: start;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.juego
+{
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+table
+{
+    border: white 5px solid;
+}
+
+table tr td
+{
+    border: white 2px solid;
+    height: 40px;
+    width: 40px;
+}
+
+#tablaColores table tr td
+{
+    height: 20px;
+    width: 63px;
+}
+
+#tablaColores table tr:nth-child(2)
+{
+    grid-column-start: 1;
+	grid-column-end: 6;
+}
+
+#info
+{
+    text-align: center;
+}
+
+.botones
+{
+    height: 30px;
+    width: 137px;
+    margin-left: 5px;
+    margin-top: 20px;
+}
+
+#recargar
+{
+    width: 45px;
+    height: 30px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    background-image: url('../img/imgrecargar.png');
+    background-size: cover;
+    border-radius: 5px;
+}
+
+#aceptar
+{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    width: 120px;
+}
+
+#tablaJuego
+{
+    width: 220px;
+}
+
+#imagenDIV img
+{
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+}
+
+#selec
+{
+    margin: auto;
+    text-align: center;
+}
+
+.texto
+{
+    text-align: center;
+}
