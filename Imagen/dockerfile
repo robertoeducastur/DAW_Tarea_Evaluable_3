@@ -1,0 +1,19 @@
+#Descarga la imagen de apache en su última versión
+FROM httpd:latest
+
+#Información de la aplicación
+LABEL maintainer="Roberto Morán Noriega roberto@xorrascar.org"
+LABEL version="0.1"
+LABEL description="Juego básico para colorear y pintar dibujos a demanda"
+
+#Creamos el directorio juego-cartas
+WORKDIR /juego-dibujos
+#copiamos archivos y directorios necesarios
+COPY . ./
+
+#copiamos los ficheros y directorios necesarios en la carpeta de inicio de apache
+COPY ./html /usr/local/apache2/htdocs
+#usaremos el puerto 80/TCP
+EXPOSE 80
+
+RUN echo "Gracias por entretenerte con nuestro juego de Dibujos"

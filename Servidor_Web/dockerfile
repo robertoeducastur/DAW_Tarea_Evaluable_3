@@ -1,4 +1,4 @@
-FROM httpd:latest
+FROM php:7.2-apache
 
 MAINTAINER Roberto Morán Noriega robertomn23@educastur.es
 
@@ -6,6 +6,6 @@ MAINTAINER Roberto Morán Noriega robertomn23@educastur.es
 WORKDIR /home/cotomusel/contenedores/DAW/DAW_Tarea_Evaluable_3/Servidor_Web
 
 #Copiamos del index del juego a la carpeta de inicio de apache
-COPY ./html/index.html servidor:/var/www/local
+COPY ./html/index.html servidor:/var/www/html
 COPY ./html/info.php servidor:/var/www/html
 COPY ./html/cabeceras.php servidor:/var/www/html
